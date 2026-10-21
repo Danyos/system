@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Work — Daniel Hambardzumyan</title>
+<meta name="description" content="Real projects: who it was for, what was broken, what changed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demos.css">
+<link rel="stylesheet" href="sales.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Daniel Hambardzumyan<small>AUTOMATION STUDIO · AI · CRM</small></span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html#solutions" >Solutions</a>
+      <a href="index.html#how">How it works</a>
+      <a href="work.html" class="on">Work</a>
+      <a href="services.html" >Starting prices</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+    <div class="cta">
+      <span class="tel">+1 (818) 000-0000</span>
+      <a class="btn pri" href="quote.html">Get a quote</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+
+<section class="pagehead"><div class="wrap"><div class="eyebrow">Work</div><h1>Real projects, three lines each.</h1><p class="lead">Who it was for, what was broken, what changed. Numbers only where I can show them.</p></div></section>
+<section><div class="wrap">
+  <div class="works">
+    <article class="work" id="assistant"><div class="shot">AI SALES ASSISTANT · 2025</div><div class="body"><div class="meta">Automation · service business</div><h3>Inquiries answered in under a minute</h3><p><b>Problem:</b> the owner answered every message himself, usually hours late.<br><b>Built:</b> an assistant that reads each inbound inquiry, drafts a reply from approved facts, and hands it to the owner for one click.<br><b>Result:</b> replies in under a minute; the owner reviews instead of writes.</p><div class="res"><span class="g">reply &lt; 1 min</span><span>OpenAI API</span><span>Next.js</span><span>pgvector</span></div></div></article>
+    <article class="work" id="danisoft"><div class="shot">DANISOFT ACADEMY · 2024–25</div><div class="body"><div class="meta">Website + CRM · education</div><h3>From first visit to enrolled student</h3><p><b>Problem:</b> applications came by phone and DM and got lost between people.<br><b>Built:</b> site, admin CMS, and a lead pipeline that tracks every applicant from first visit to enrollment.<br><b>Result:</b> one list, one owner per lead, SEO-tuned pages that bring applicants on their own.</p><div class="res"><span class="g">lead pipeline</span><span>Next.js 15</span><span>React 19</span><span>Prisma</span></div></div></article>
+    <article class="work" id="ameska"><div class="shot">AM-ESKA · 2023</div><div class="body"><div class="meta">Website · industrial</div><h3>Bilingual site for a licensed recycler</h3><p><b>Problem:</b> a licensed industrial recycler with no credible online presence.<br><b>Built:</b> a bilingual site covering services, licensing and contact routing.<br><b>Result:</b> the company can be found and verified by partners and regulators.</p><div class="res"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
+    <article class="work"><div class="shot">YOUR PROJECT · 2026</div><div class="body"><div class="meta">Next</div><h3>Reserved for a Glendale or Burbank shop</h3><p>Three project slots open in November. First come, first served; the audit decides whether it's a fit.</p><a class="link" href="contact.html">Get the free audit →</a></div></article>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap cols">
+    <div class="col"><div class="brand"><span class="mark"></span><span>Daniel Hambardzumyan</span></div><p>Websites, CRM systems and automation for US small businesses. Built in Yerevan, Armenia. Clients in California.</p></div>
+    <div class="col"><div class="k">Pages</div><a href="index.html#solutions">Solutions</a><a href="index.html#how">How it works</a><a href="work.html">Work</a><a href="services.html">Starting prices</a><a href="quote.html">Get a quote</a><a href="contact.html">Contact</a></div>
+    <div class="col"><div class="k">Workflows</div><a href="index.html#s-order">Email → order → delivery</a><a href="index.html#s-support">Verified AI support</a><a href="index.html#s-book">Booking bot</a><a href="index.html#s-qr">QR chat · order · pay</a><a href="index.html#s-calls">Call analysis + CRM</a><a href="index.html#s-custom">Custom automation</a></div>
+    <div class="col"><div class="k">Contact</div><span>+1 (818) 000-0000</span><span>+374 98 657545</span><span>hello@danielh.dev</span><span style="color:var(--mute)">Mon–Fri · 7am–1pm PT</span></div>
+  </div>
+  <div class="wrap"><div class="bottom"><span><b>●</b> all systems operational</span><span>© 2026 Daniel Hambardzumyan</span><span>Privacy · Terms · SMS consent</span></div></div>
+</footer>
+<script>
+(function(){
+  var f=document.getElementById('lead-form');
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();f.classList.add('sent');f.querySelector('button[type=submit]').disabled=true;});}
+})();
+</script>
+
+</body>
+</html>

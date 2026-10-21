@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get a quote — Daniel Hambardzumyan</title>
+<meta name="description" content="Describe your business in a two-minute chat and get a written quote the next business day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demos.css">
+<link rel="stylesheet" href="sales.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Daniel Hambardzumyan<small>AUTOMATION STUDIO · AI · CRM</small></span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html#solutions" >Solutions</a>
+      <a href="index.html#how">How it works</a>
+      <a href="work.html" >Work</a>
+      <a href="services.html" >Starting prices</a>
+      <a href="contact.html" class="on">Contact</a>
+    </nav>
+    <div class="cta">
+      <span class="tel">+1 (818) 000-0000</span>
+      <a class="btn pri" href="quote.html">Get a quote</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<section class="pagehead"><div class="wrap"><div class="eyebrow">Get a quote</div><h1>Describe your business. Get a written quote.</h1><p class="lead">A few questions, two minutes. You'll see the starting price as you go; the exact number arrives by email the next business day, with scope and timeline.</p></div></section>
+<section><div class="wrap quote">
+  <div class="qbox">
+    <div class="qhead"><span>quote chat · <b>daniel</b></span><span id="q-step">1 / 6</span></div>
+    <div class="qlog" id="q-log"></div>
+    <form class="qin" id="q-form"><input id="q-input" placeholder="Type here…" autocomplete="off" disabled><button type="submit" id="q-send" disabled>Send</button></form>
+  </div>
+  <aside class="qside">
+    <div class="card"><div class="k">Starting price</div><div class="big" id="q-price"><small>from</small>—</div><p id="q-pricenote" style="font-size:13.5px">Pick a solution and this updates.</p></div>
+    <div class="card"><div class="k">What you'll get</div><ul><li>Written scope, price, timeline</li><li>What's included and what isn't</li><li>Next business day, Mon–Fri</li><li>No call unless you ask for one</li></ul></div>
+    <div class="card"><div class="k">Prefer to talk?</div><p style="font-size:14px">Text <b>+1 (818) 000-0000</b> or email <b>hello@danielh.dev</b>. Or see all <a class="link" href="services.html">starting prices</a>.</p></div>
+  </aside>
+</div></section>
+<footer>
+  <div class="wrap cols">
+    <div class="col"><div class="brand"><span class="mark"></span><span>Daniel Hambardzumyan</span></div><p>Websites, CRM systems and automation for US small businesses. Built in Yerevan, Armenia. Clients in California.</p></div>
+    <div class="col"><div class="k">Pages</div><a href="index.html#solutions">Solutions</a><a href="index.html#how">How it works</a><a href="work.html">Work</a><a href="services.html">Starting prices</a><a href="quote.html">Get a quote</a><a href="contact.html">Contact</a></div>
+    <div class="col"><div class="k">Workflows</div><a href="index.html#s-order">Email → order → delivery</a><a href="index.html#s-support">Verified AI support</a><a href="index.html#s-book">Booking bot</a><a href="index.html#s-qr">QR chat · order · pay</a><a href="index.html#s-calls">Call analysis + CRM</a><a href="index.html#s-custom">Custom automation</a></div>
+    <div class="col"><div class="k">Contact</div><span>+1 (818) 000-0000</span><span>+374 98 657545</span><span>hello@danielh.dev</span><span style="color:var(--mute)">Mon–Fri · 7am–1pm PT</span></div>
+  </div>
+  <div class="wrap"><div class="bottom"><span><b>●</b> all systems operational</span><span>© 2026 Daniel Hambardzumyan</span><span>Privacy · Terms · SMS consent</span></div></div>
+</footer>
+<script>
+(function(){
+  var f=document.getElementById('lead-form');
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();f.classList.add('sent');f.querySelector('button[type=submit]').disabled=true;});}
+})();
+</script>
+<script>
+(function(){
+  var log=document.getElementById('q-log'),inp=document.getElementById('q-input'),send=document.getElementById('q-send'),form=document.getElementById('q-form'),step=document.getElementById('q-step'),priceEl=document.getElementById('q-price'),note=document.getElementById('q-pricenote');
+  var SOL={order:['Email-to-order automation',3000,'2–3 weeks'],support:['Verified AI support',2500,'1–2 weeks'],book:['Booking bot',2000,'1–2 weeks'],qr:['QR chat · order · pay',3500,'per venue'],calls:['Call analysis + CRM',3000,'2–3 weeks'],custom:['Custom automation',2500,'per workflow'],site:['Business website',3500,'2–3 weeks'],notsure:['Not sure yet',0,'']};
+  var a={};
+  function msg(t,cls){var d=document.createElement('div');d.className='msg '+cls;d.innerHTML=t;log.appendChild(d);log.scrollTop=log.scrollHeight;return d}
+  function opts(list,cb){var w=document.createElement('div');w.className='qopts';list.forEach(function(o){var b=document.createElement('button');b.type='button';b.textContent=o[0];b.onclick=function(){w.remove();msg(o[0],'out');cb(o[1],o[0])};w.appendChild(b)});log.appendChild(w);log.scrollTop=log.scrollHeight}
+  function ask(cb,ph){inp.disabled=false;send.disabled=false;inp.placeholder=ph||'Type here…';inp.focus();form.onsubmit=function(e){e.preventDefault();var v=inp.value.trim();if(!v)return;msg(v.replace(/</g,'&lt;'),'out');inp.value='';inp.disabled=true;send.disabled=true;cb(v)}}
+  function setPrice(k){var s=SOL[k];if(!s||!s[1]){priceEl.innerHTML='<small>from</small>—';note.textContent='I will price this after reading your answers.';return}priceEl.innerHTML='<small>from</small>$'+s[1].toLocaleString();note.textContent=s[0]+' · '+s[2]+'. Exact price depends on your tools and locations.'}
+  function S(n){step.textContent=n+' / 6'}
+  function start(){
+    S(1);msg("Hi, I'm Daniel. Let's figure out what you need and what it costs. First: what kind of business is it?",'in');
+    setTimeout(function(){opts([['Auto body / repair','auto'],['Restaurant / café / food chain','food'],['Home services (HVAC, plumbing…)','home'],['Salon / barber / spa','beauty'],['Office / agency / other','other']],q2)},500);
+  }
+  function q2(v,l){a.industry=l;S(2);
+    var pre=location.hash.replace('#','');
+    setTimeout(function(){msg("Got it. Which problem do you want solved first?",'in');
+      var list=[['Orders come by email and get retyped','order'],['Same questions answered differently','support'],['Bookings by phone/DM, no-shows','book'],['Guests should order & pay by QR','qr'],['Calls vanish, promises forgotten','calls'],['Something custom (payments, feedback, tools)','custom'],['We also need a website','site'],['Not sure, you tell me','notsure']];
+      if(pre&&SOL[pre]){var k=list.filter(function(x){return x[1]===pre})[0];if(k){list.splice(list.indexOf(k),1);list.unshift(k)}}
+      opts(list,q3)},600)}
+  function q3(v,l){a.solution=v;setPrice(v);S(3);
+    setTimeout(function(){msg("How big is the operation?",'in');opts([['Just me','1'],['2–5 people','2-5'],['6–15 people','6-15'],['Several locations','multi']],q4)},600)}
+  function q4(v,l){a.size=l;S(4);
+    setTimeout(function(){msg("What do you use today? Rough is fine (e.g. “Square, Google Calendar, nothing”).",'in');ask(q5,'Square · Jobber · spreadsheets · nothing…')},600)}
+  function q5(v){a.tools=v;S(5);
+    setTimeout(function(){msg("Last one about the business: where's the money leaking right now, in one sentence?",'in');ask(q6,'“People call at night and we never hear back from them”')},600)}
+  function q6(v){a.pain=v;S(6);
+    setTimeout(function(){msg("Thanks. Where should the quote go? Email, plus a US mobile if you're OK with a text when it's ready.",'in');ask(q7,'you@business.com · (818) 555-0147')},600)}
+  function q7(v){a.contact=v;
+    var s=SOL[a.solution]||SOL.notsure;
+    setTimeout(function(){
+      msg("Done. Here's what I have:<br><br><b>"+a.industry+"</b> · "+a.size+" people<br>Priority: <b>"+s[0]+"</b>"+(s[1]?" · starting at $"+s[1].toLocaleString():"")+"<br>Tools: "+a.tools.replace(/</g,'&lt;')+"<br>Pain: “"+a.pain.replace(/</g,'&lt;')+"”<br><br>You'll have a written quote by the next business day (Mon–Fri, I'm 12 h ahead of LA, so often by your morning).",'in');
+      msg('request saved · reply window Mon–Fri 7am–1pm PT','sys');
+      step.textContent='sent';
+    },700)}
+  start();
+})();
+</script>
+</body>
+</html>

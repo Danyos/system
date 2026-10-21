@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Daniel Hambardzumyan</title>
+<meta name="description" content="Free lead audit or a direct message.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demos.css">
+<link rel="stylesheet" href="sales.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Daniel Hambardzumyan<small>AUTOMATION STUDIO · AI · CRM</small></span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html#solutions" >Solutions</a>
+      <a href="index.html#how">How it works</a>
+      <a href="work.html" >Work</a>
+      <a href="services.html" >Starting prices</a>
+      <a href="contact.html" class="on">Contact</a>
+    </nav>
+    <div class="cta">
+      <span class="tel">+1 (818) 000-0000</span>
+      <a class="btn pri" href="quote.html">Get a quote</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+
+<section class="pagehead"><div class="wrap"><div class="eyebrow">Contact</div><h1>Send me your website. I'll show you where leads go cold.</h1><p class="lead">I fill your contact form the way a customer would, time what happens, and send you a two-minute video. One business day, no pitch.</p></div></section>
+<section><div class="wrap contact">
+  <form class="form" id="lead-form">
+    <div class="two"><label>Your name<input id="c-name" autocomplete="name" placeholder="Mike Reyes" required></label><label>Business<input id="c-biz" autocomplete="organization" placeholder="Burbank Auto Body"></label></div>
+    <div class="two"><label>Email<input id="c-email" type="email" autocomplete="email" placeholder="mike@example.com" required></label><label>Mobile (US)<input id="c-phone" inputmode="tel" autocomplete="tel" placeholder="(818) 555-0147"></label></div>
+    <label>Website URL<input id="c-url" inputmode="url" placeholder="https://"></label>
+    <label>What happens today when someone fills your contact form?<select id="c-what"><option>I get an email and reply when I can</option><option>Someone at the front desk handles it</option><option>Honestly, I'm not sure</option><option>Nothing, we don't have a form</option></select></label>
+    <label>Anything else<textarea id="c-msg" placeholder="What kind of jobs do you want more of?"></textarea></label>
+    <label class="consent"><input type="checkbox" id="c-sms"> <span>You may text me about this request at the number above. Message &amp; data rates may apply. Reply STOP to opt out.</span></label>
+    <button class="btn pri" type="submit">Send and get the audit →</button>
+    <div class="ok"><b>Got it.</b> You'll hear from me within one business day (Mon–Fri, 7am–1pm PT) with the video.</div>
+  </form>
+  <div class="direct">
+    <div><span class="k">Reply window</span><b>Mon–Fri · 7am–1pm Pacific</b><span>I'm in Yerevan, GMT+4. Evening messages are answered by your morning.</span></div>
+    <div><span class="k">Email</span><b>hello@danielh.dev</b><span>Fastest for sending a URL or a screenshot</span></div>
+    <div><span class="k">US phone / text</span><b>+1 (818) 000-0000</b><span>Texts answered in the reply window</span></div>
+    <div><span class="k">WhatsApp</span><b>+374 98 657545</b><span>Also fine for voice notes</span></div>
+    <div><span class="k">Where</span><b>Yerevan, Armenia</b><span>Working with businesses in Glendale, Burbank and Fresno, CA</span></div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap cols">
+    <div class="col"><div class="brand"><span class="mark"></span><span>Daniel Hambardzumyan</span></div><p>Websites, CRM systems and automation for US small businesses. Built in Yerevan, Armenia. Clients in California.</p></div>
+    <div class="col"><div class="k">Pages</div><a href="index.html#solutions">Solutions</a><a href="index.html#how">How it works</a><a href="work.html">Work</a><a href="services.html">Starting prices</a><a href="quote.html">Get a quote</a><a href="contact.html">Contact</a></div>
+    <div class="col"><div class="k">Workflows</div><a href="index.html#s-order">Email → order → delivery</a><a href="index.html#s-support">Verified AI support</a><a href="index.html#s-book">Booking bot</a><a href="index.html#s-qr">QR chat · order · pay</a><a href="index.html#s-calls">Call analysis + CRM</a><a href="index.html#s-custom">Custom automation</a></div>
+    <div class="col"><div class="k">Contact</div><span>+1 (818) 000-0000</span><span>+374 98 657545</span><span>hello@danielh.dev</span><span style="color:var(--mute)">Mon–Fri · 7am–1pm PT</span></div>
+  </div>
+  <div class="wrap"><div class="bottom"><span><b>●</b> all systems operational</span><span>© 2026 Daniel Hambardzumyan</span><span>Privacy · Terms · SMS consent</span></div></div>
+</footer>
+<script>
+(function(){
+  var f=document.getElementById('lead-form');
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();f.classList.add('sent');f.querySelector('button[type=submit]').disabled=true;});}
+})();
+</script>
+
+</body>
+</html>

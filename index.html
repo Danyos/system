@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daniel Hambardzumyan — Systems for small businesses: missed-call text back, QR ordering, lead recovery, CRM</title>
+<meta name="description" content="Six small-business systems, each shown live: missed-call text back, lead recovery, QR menu & pay, booking, CRM, AI inbox. Describe your business, get a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demos.css">
+<link rel="stylesheet" href="sales.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Daniel Hambardzumyan<small>AUTOMATION STUDIO · AI · CRM</small></span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html#solutions" class="on">Solutions</a>
+      <a href="index.html#how">How it works</a>
+      <a href="work.html" >Work</a>
+      <a href="services.html" >Starting prices</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+    <div class="cta">
+      <span class="tel">+1 (818) 000-0000</span>
+      <a class="btn pri" href="quote.html">Get a quote</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+<section class="hero board-hero" id="top"><div class="wrap">
+  <div class="bh-copy">
+    <div class="kicker"><i></i><b>Automation studio · 3 slots open in November</b></div>
+    <h1>Your customers write. Your business <span>answers, books and gets paid</span> on its own.</h1>
+    <p class="lead">I connect your phone, email, Instagram, calendar and payments into one system that works while you do. Built for shops, restaurants, salons and trades.</p>
+    <div class="row"><a class="btn pri" href="#solutions">See it work ↓</a><a class="btn" href="quote.html">Get a quote</a></div>
+    <div class="hero-proof"><span class="gstar"><span class="g">G</span><span class="st">★★★★★</span><b>—</b> Google</span><span class="gstar">Fixed price</span><span class="gstar">Replies 7am–1pm PT</span></div>
+  </div>
+  <div class="hero-vis">
+    <div class="scr n8 hero-n8" data-flow="hero"></div>
+    <div class="hero-cal" aria-label="Example: a booking landing in the calendar">
+      <div class="hc-top"><span>Aram · this week</span><span class="hc-live"><i></i>calendar</span></div>
+      <div class="cal"><span class="h">M</span><span class="h">T</span><span class="h">W</span><span class="h">T</span><span class="h">F</span><span class="h">S</span><span class="h">S</span>
+        <span class="d">3</span><span class="d">4</span><span class="d">5</span><span class="d pick">6</span><span class="d">7</span><span class="d">8</span><span class="d off">9</span></div>
+      <div class="slots"><span>11:30 · booked</span><span class="pick">2:00 · Sona M. · fade</span><span>3:30 · free</span></div>
+      <div class="hc-foot">reminder → Wed 2:00 PM · “See you tomorrow at 2 👋”</div>
+    </div>
+  </div>
+</div></section>
+
+<div class="proof"><div class="wrap">
+  <div class="cell"><b>since 2019</b><span>building websites, CRMs and automations</span></div>
+  <div class="cell"><b>&lt; 10 s</b><span>customer gets a reply, any hour</span></div>
+  <div class="cell"><b>— ★ · — reviews</b><span>Google Business Profile</span><span class="sample">connect GBP to fill</span></div>
+  <div class="cell"><b>Fixed price</b><span>written scope · you own the code</span></div>
+</div></div>
+<section id="solutions"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">Which one is for me?</div><h2>Pick your business. The right workflows light up.</h2><p>Each card is the actual workflow, drawn the way I build it in n8n, running step by step with the conversation the customer sees. A 60-second video and a checklist tell you in a minute whether you need it.</p></div></div>
+  <div class="decide" id="decide"><span class="lab">I run a…</span><button data-f="auto">Auto shop</button><button data-f="food">Restaurant / café</button><button data-f="home">Home services</button><button data-f="beauty">Salon / clinic</button><button data-f="office">Office / agency</button><button data-f="all" aria-pressed="true">Show all</button></div>
+  <div class="sol">
+    <article class="solc wide" id="s-order" data-tags="food office home"><span class="match">FITS YOUR BUSINESS</span>
+      <div class="scr n8" data-flow="order"></div>
+      <div class="screens"><div class="chat"><div class="msg in" style="animation-delay:.4s">Do you have 40 × 2-inch flanges? Need them by Friday.</div><div class="msg out" style="animation-delay:1.8s">Yes — FL-200, 112 in stock, $12.40 each. Order here: shop.example/fl-200 · Thursday delivery available.</div><div class="msg sys" style="animation-delay:3.2s">09:31 · order #2214 paid · $496.00</div></div><div class="hero-cal in-card"><div class="hc-top"><span>Deliveries · Thu</span><span class="hc-live"><i></i>Google Calendar</span></div><div class="slots"><span>08:00 · #2209 · Pasadena</span><span class="pick">10:00 · #2214 · 40 FL-200 · Glendale</span><span>13:00 · #2211 · Burbank</span></div><div class="hc-foot">dispatch: pick list + address sent to Telegram</div></div></div>
+      <div class="body"><div class="ind">Wholesale · suppliers · shops · service businesses</div><h3>Email → order → delivery, without anyone typing it in</h3><p>A customer emails “do you have X?”. The system finds it on your site, replies with price and link, takes the order, picks a delivery day, puts it in Google Calendar and tells dispatch. You see a done order, not an email thread.</p>
+      <div class="isyou"><div class="ba b"><span class="k">Without it</span>Email sits till evening → three back-and-forths → someone retypes the order.</div><div class="ba a"><span class="k">With it</span>Reply in a minute with link + price → paid → delivery on the calendar → dispatch told.</div></div>
+      <ul class="chk"><li class="cap">You need this if…</li><li>You get orders or requests by email</li><li>Someone retypes them into a sheet or POS</li><li>Deliveries are planned by phone</li></ul>
+      <div class="foot"><span class="from">from <b>$3,000</b> · 2–3 weeks · Gmail/Outlook · your catalog · Google Calendar</span><div class="acts"><button class="btn vid" type="button" data-video="s-order">Watch 60 s</button><a class="btn pri" href="quote.html#order">Order this →</a></div></div></div>
+    </article>
+    <article class="solc wide" id="s-support" data-tags="auto home beauty office food"><span class="match">FITS YOUR BUSINESS</span>
+      <div class="scr n8" data-flow="support"></div>
+      <div class="body"><div class="ind">Any business that answers the same questions daily</div><h3>Answers that are checked before they're sent</h3><p>A question comes in. The system reads your site and documents, verifies the answer in a second source (price list, stock, calendar), and replies only when the facts agree. If they don't, you get the draft with both sources and approve in one tap.</p>
+      <div class="isyou"><div class="ba b"><span class="k">Without it</span>Staff answer from memory → prices and promises differ → you find out later.</div><div class="ba a"><span class="k">With it</span>Every answer comes from your approved facts, verified twice, logged in the CRM.</div></div>
+      <ul class="chk"><li class="cap">You need this if…</li><li>Customers ask about price, warranty, hours</li><li>Answers differ by who replies</li><li>You've been burned by a wrong promise</li></ul>
+      <div class="foot"><span class="from">from <b>$2,500</b> · 1–2 weeks · email · IG · web chat · WhatsApp</span><div class="acts"><button class="btn vid" type="button" data-video="s-support">Watch 60 s</button><a class="btn pri" href="quote.html#support">Order this →</a></div></div></div>
+    </article>
+    <article class="solc wide" id="s-book" data-tags="beauty home auto"><span class="match">FITS YOUR BUSINESS</span>
+      <div class="scr n8" data-flow="book"></div>
+      <div class="screens"><div class="hero-cal in-card"><div class="hc-top"><span>Aram · this week</span><span class="hc-live"><i></i>Google Calendar</span></div><div class="cal"><span class="h">M</span><span class="h">T</span><span class="h">W</span><span class="h">T</span><span class="h">F</span><span class="h">S</span><span class="h">S</span><span class="d">3</span><span class="d">4</span><span class="d">5</span><span class="d pick">6</span><span class="d">7</span><span class="d">8</span><span class="d off">9</span></div><div class="slots"><span>11:30 · booked</span><span class="pick">2:00 · Sona M.</span><span>3:30 · free</span></div><div class="hc-foot">text sent · reminder armed 24 h before</div></div><div class="chat"><div class="msg in" style="animation-delay:.4s">hi, can I book a fade with Aram this week?</div><div class="msg out" style="animation-delay:1.6s">Aram has Wed 11:30, Thu 2:00 or Sat 10:00 — which works?</div><div class="msg in" style="animation-delay:3s">thu 2</div><div class="msg out" style="animation-delay:4s">Booked: Thu 2:00 PM with Aram. Reply R to reschedule.</div></div></div>
+      <div class="body"><div class="ind">Salons · barbers · clinics · detailers · trades</div><h3>A bot that books like a good receptionist</h3><p>The visitor writes in plain language. The bot asks what, who and when, checks that specialist's real calendar, offers the nearest free slots, books, confirms by text and reminds the day before. Reschedules re-open the slot.</p>
+      <div class="isyou"><div class="ba b"><span class="k">Without it</span>Booking by DM and phone → double bookings → no-shows.</div><div class="ba a"><span class="k">With it</span>Natural chat → live calendar check → booked → reminded.</div></div>
+      <ul class="chk"><li class="cap">You need this if…</li><li>You book by DM or phone</li><li>Several specialists, separate calendars</li><li>No-shows every week</li></ul>
+      <div class="foot"><span class="from">from <b>$2,000</b> · 1–2 weeks · Google / Apple calendar · site · IG · WhatsApp</span><div class="acts"><button class="btn vid" type="button" data-video="s-book">Watch 60 s</button><a class="btn pri" href="quote.html#book">Order this →</a></div></div></div>
+    </article>
+    <article class="solc wide" id="s-qr" data-tags="food"><span class="match">FITS YOUR BUSINESS</span>
+      <div class="scr n8" data-flow="qr"></div>
+      <div class="body"><div class="ind">Restaurants · cafés · bars · food chains</div><h3>QR that talks: order, ask, pay, book again</h3><p>Guests scan and a waiter-style chat opens. It recommends, takes “spicy, no onion”, sends the kitchen ticket, splits and closes the bill, texts the receipt, asks for the review and offers the same table next Friday. The menu is still there for those who prefer it.</p>
+      <div class="isyou"><div class="ba b"><span class="k">Without it</span>Wait to order → wait to pay → small tips → nobody comes back on purpose.</div><div class="ba a"><span class="k">With it</span>Order and pay in chat → kitchen ticket → receipt → review → reservation offered.</div></div>
+      <ul class="chk"><li class="cap">You need this if…</li><li>Tables wait 10+ min to order or pay</li><li>Menu changes mean reprinting</li><li>You want regulars to rebook</li></ul>
+      <div class="foot"><span class="from">from <b>$3,500</b> · Per venue · multi-location · POS integration quoted</span><div class="acts"><button class="btn vid" type="button" data-video="s-qr">Watch 60 s</button><a class="btn pri" href="quote.html#qr">Order this →</a></div></div></div>
+    </article>
+    <article class="solc wide" id="s-calls" data-tags="auto home office"><span class="match">FITS YOUR BUSINESS</span>
+      <div class="scr n8" data-flow="calls"></div>
+      <div class="body"><div class="ind">Shops · trades · sales teams · offices</div><h3>Every call analyzed, every promise tracked</h3><p>Calls are transcribed and analyzed: what was discussed, what was promised, what was missed or said wrong. The CRM gets the note and the next step; you get a daily digest with flags like “price said but no written quote”.</p>
+      <div class="isyou"><div class="ba b"><span class="k">Without it</span>Calls vanish → promises forgotten → nobody knows why the deal died.</div><div class="ba a"><span class="k">With it</span>Transcript → analysis → CRM note → flags → daily digest.</div></div>
+      <ul class="chk"><li class="cap">You need this if…</li><li>You or your team take 10+ calls a day</li><li>Follow-ups depend on memory</li><li>You want to coach staff on real calls</li></ul>
+      <div class="foot"><span class="from">from <b>$3,000</b> · 2–3 weeks · your phone system or a new number</span><div class="acts"><button class="btn vid" type="button" data-video="s-calls">Watch 60 s</button><a class="btn pri" href="quote.html#calls">Order this →</a></div></div></div>
+    </article>
+    <article class="solc wide" id="s-custom" data-tags="auto food home beauty office"><span class="match">FITS YOUR BUSINESS</span>
+      <div class="scr n8" data-flow="custom"></div>
+      <div class="body"><div class="ind">Built around your process</div><h3>Payments, feedback, your tools: your process, automated</h3><p>Not every business fits a template. I map your actual process, then wire payments, feedback loops, spreadsheets, accounting and POS into one flow with rules and AI where it helps. Delivered as an n8n workflow you own and can read.</p>
+      <div class="isyou"><div class="ba b"><span class="k">Without it</span>Five tools, nobody connecting them → double entry → things fall through.</div><div class="ba a"><span class="k">With it</span>One flow: trigger → your tools → decide → notify. Readable, yours.</div></div>
+      <ul class="chk"><li class="cap">You need this if…</li><li>You do the same 20-minute task every day</li><li>Data lives in three places</li><li>Off-the-shelf tools almost fit</li></ul>
+      <div class="foot"><span class="from">from <b>$2,500</b> · Scoped after a discovery call · priced per workflow</span><div class="acts"><button class="btn vid" type="button" data-video="s-custom">Watch 60 s</button><a class="btn pri" href="quote.html#custom">Order this →</a></div></div></div>
+    </article>
+  </div>
+</div></section>
+
+
+<section id="how"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">How it works</div><h2>Describe it. Get a number. See it run.</h2></div></div>
+  <div class="steps">
+    <article class="step"><div class="n">01 · 2 MINUTES</div><h3>Describe your business in the quote chat.</h3><p>Industry, size, where the money leaks. No call needed. Attach your site or Instagram.</p><div class="t">→ quote.html</div></article>
+    <article class="step"><div class="n">02 · NEXT BUSINESS DAY</div><h3>A written quote. Fixed scope, fixed price.</h3><p>What's in, what's out, how long. Starting prices are public; the exact number depends on your tools and locations.</p><div class="t">50 / 30 / 20 · you own everything</div></article>
+    <article class="step"><div class="n">03 · 1–6 WEEKS</div><h3>Weekly demos, tested on real customers.</h3><p>Deposit starts the build. You watch it run every week. Handover includes training; a care plan is optional.</p><div class="t">Yerevan · replies 7am–1pm PT</div></article>
+  </div>
+</div></section>
+
+<section id="reviews" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">Reviews</div><h2>What clients say, on Google.</h2><p>Pulled from the Google Business Profile. Nothing written by me; every review has a name and a business behind it.</p></div><a class="link" href="https://g.page/">Read all on Google →</a></div>
+  <div class="grev">
+    <div class="gsum"><div class="big">—</div><div class="st">★★★★★</div><div class="gl"><span class="gstar" style="padding:4px 8px 4px 4px"><span class="g">G</span>Google</span>— reviews</div>
+      <div class="bars"><div class="bar">5<i style="--w:0%"></i>—</div><div class="bar">4<i style="--w:0%"></i>—</div><div class="bar">3<i style="--w:0%"></i>—</div><div class="bar">2<i style="--w:0%"></i>—</div><div class="bar">1<i style="--w:0%"></i>—</div></div>
+      <div class="sample">fills from GBP once connected</div></div>
+    <div class="gcards">
+      <div class="gc sample"><span class="gmark">G</span><div class="top"><div class="av">AB</div><div><b>Client name</b><span>Business · City · 2 weeks ago</span></div></div><div class="st">★★★★★</div><q>Sample. The client's own words: what was slow before, what happens now, how many more jobs.</q></div>
+      <div class="gc sample"><span class="gmark">G</span><div class="top"><div class="av">CD</div><div><b>Client name</b><span>Business · City · 1 month ago</span></div></div><div class="st">★★★★★</div><q>Sample. Short is fine. “Texts customers back before I even see the call.”</q></div>
+      <div class="gc sample"><span class="gmark">G</span><div class="top"><div class="av">EF</div><div><b>Client name</b><span>Business · City · 2 months ago</span></div></div><div class="st">★★★★★</div><q>Sample. Mention the person: “Daniel answered every question the same day.”</q></div>
+      <div class="gc sample"><span class="gmark">G</span><div class="top"><div class="av">GH</div><div><b>Client name</b><span>Business · City · 3 months ago</span></div></div><div class="st">★★★★★</div><q>Sample. A number if there is one: “Reviews went from 12 to 40 in two months.”</q></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">Before you order</div><h2>Four things people ask first.</h2></div></div>
+  <div class="faq">
+    <details open><summary>You're not in the US. How does that work?</summary><p>I'm in Yerevan, Armenia, 12 hours ahead of Los Angeles. You get me directly, replies Mon–Fri 7am–1pm Pacific, and overnight work is done by your morning. Contracts in English, payment by card or ACH through Stripe, every account opened in your name.</p></details>
+    <details><summary>What does it cost, really?</summary><p>Starting prices are on every card and on the <a class="link" href="services.html">prices page</a>. The exact number comes from the quote and depends on your tools and locations. It's written, fixed, and includes what's not included.</p></details>
+    <details><summary>Who owns it afterwards?</summary><p>You do. Code, hosting, domain, CRM, messaging accounts. You can leave at any time with everything running.</p></details>
+    <details><summary>Will it work with what I already use?</summary><p>Usually yes: Square, Toast, Jobber, Housecall Pro, Google Calendar, HubSpot, Sheets. If your tool has an API or a Zapier/n8n connector, it plugs in. If not, I say so in the quote.</p></details>
+  </div>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <div><div class="eyebrow">Next step</div><h2>Two minutes from you. A number from me.</h2><p>Describe your business in the quote chat. You'll have a written quote by the next business day, no pitch call unless you want one.</p>
+    <div class="who"><div class="av">D</div><div><b style="color:var(--fg)">Daniel Hambardzumyan</b><br>Building systems for small businesses since 2019 · Yerevan → California</div></div></div>
+  <div class="col"><a class="btn pri" href="quote.html">Get a quote →</a><small>Rather see first? <a class="link" href="contact.html">Free lead audit</a></small></div>
+</div></section>
+
+<div class="modal" id="vmodal" role="dialog" aria-modal="true" aria-label="Solution video">
+  <div class="mbox">
+    <button class="mclose" type="button" id="vclose" aria-label="Close">×</button>
+    <div class="mvid"><video id="vplayer" controls playsinline preload="none" hidden></video><div class="ph" id="vph"><div><i>▶</i>60-second walkthrough<br><span style="color:var(--dim)">video goes here · drop the file in /video/&lt;id&gt;.mp4</span></div></div></div>
+    <div class="mbody">
+      <div><h3 id="vtitle">—</h3><p id="vtext">—</p></div>
+      <div class="order"><span class="k">Order this system</span><div class="amt" id="vprice"><small>from</small>—</div><small id="vnote">—</small><a class="btn pri" id="vorder" href="quote.html">Order this →</a><small>Written quote by the next business day. Fixed scope, fixed price.</small></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var D={"s-order":{"name":"Email-to-order automation","title":"Email → order → delivery, without anyone typing it in","after":"Reply in a minute with link + price → paid → delivery on the calendar → dispatch told.","price":3000,"note":"2–3 weeks · Gmail/Outlook · your catalog · Google Calendar"},"s-support":{"name":"Verified AI support","title":"Answers that are checked before they're sent","after":"Every answer comes from your approved facts, verified twice, logged in the CRM.","price":2500,"note":"1–2 weeks · email · IG · web chat · WhatsApp"},"s-book":{"name":"Booking bot","title":"A bot that books like a good receptionist","after":"Natural chat → live calendar check → booked → reminded.","price":2000,"note":"1–2 weeks · Google / Apple calendar · site · IG · WhatsApp"},"s-qr":{"name":"QR chat · order · pay","title":"QR that talks: order, ask, pay, book again","after":"Order and pay in chat → kitchen ticket → receipt → review → reservation offered.","price":3500,"note":"Per venue · multi-location · POS integration quoted"},"s-calls":{"name":"Call analysis + CRM","title":"Every call analyzed, every promise tracked","after":"Transcript → analysis → CRM note → flags → daily digest.","price":3000,"note":"2–3 weeks · your phone system or a new number"},"s-custom":{"name":"Custom automation","title":"Payments, feedback, your tools: your process, automated","after":"One flow: trigger → your tools → decide → notify. Readable, yours.","price":2500,"note":"Scoped after a discovery call · priced per workflow"}};
+  var m=document.getElementById('vmodal'),v=document.getElementById('vplayer'),ph=document.getElementById('vph');
+  function open(k){var d=D[k];if(!d)return;document.getElementById('vtitle').textContent=d.name;document.getElementById('vtext').textContent=d.title+'. '+d.after;document.getElementById('vprice').innerHTML='<small>from</small>$'+d.price.toLocaleString();document.getElementById('vnote').textContent=d.note;document.getElementById('vorder').href='quote.html#'+k.replace('s-','');
+    v.hidden=true;ph.hidden=false;v.removeAttribute('src');var src='video/'+k.replace('s-','')+'.mp4';
+    fetch(src,{method:'HEAD'}).then(function(r){if(r.ok){v.src=src;v.hidden=false;ph.hidden=true}}).catch(function(){});
+    m.classList.add('open');document.body.style.overflow='hidden'}
+  function close(){m.classList.remove('open');document.body.style.overflow='';v.pause()}
+  document.querySelectorAll('[data-video]').forEach(function(b){b.addEventListener('click',function(){open(b.dataset.video)})});
+  document.getElementById('vclose').addEventListener('click',close);
+  m.addEventListener('click',function(e){if(e.target===m)close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  var bs=document.querySelectorAll('#decide button'),cards=document.querySelectorAll('.solc');
+  function filt(f){bs.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===f?'true':'false')});cards.forEach(function(c){var hit=f==='all'||(c.dataset.tags||'').split(' ').indexOf(f)>-1;c.classList.toggle('dim',f!=='all'&&!hit);c.classList.toggle('hit',f!=='all'&&hit)});
+    if(f!=='all'){var first=document.querySelector('.solc.hit');if(first)first.scrollIntoView({behavior:'smooth',block:'start'})}}
+  bs.forEach(function(b){b.addEventListener('click',function(){filt(b.dataset.f)})});
+})();
+</script>
+<div class="stickycta"><a class="btn pri" href="quote.html">Get a quote · 2 min</a><a class="btn" href="#solutions">See it work</a></div>
+<footer>
+  <div class="wrap cols">
+    <div class="col"><div class="brand"><span class="mark"></span><span>Daniel Hambardzumyan</span></div><p>Websites, CRM systems and automation for US small businesses. Built in Yerevan, Armenia. Clients in California.</p></div>
+    <div class="col"><div class="k">Pages</div><a href="index.html#solutions">Solutions</a><a href="index.html#how">How it works</a><a href="work.html">Work</a><a href="services.html">Starting prices</a><a href="quote.html">Get a quote</a><a href="contact.html">Contact</a></div>
+    <div class="col"><div class="k">Workflows</div><a href="index.html#s-order">Email → order → delivery</a><a href="index.html#s-support">Verified AI support</a><a href="index.html#s-book">Booking bot</a><a href="index.html#s-qr">QR chat · order · pay</a><a href="index.html#s-calls">Call analysis + CRM</a><a href="index.html#s-custom">Custom automation</a></div>
+    <div class="col"><div class="k">Contact</div><span>+1 (818) 000-0000</span><span>+374 98 657545</span><span>hello@danielh.dev</span><span style="color:var(--mute)">Mon–Fri · 7am–1pm PT</span></div>
+  </div>
+  <div class="wrap"><div class="bottom"><span><b>●</b> all systems operational</span><span>© 2026 Daniel Hambardzumyan</span><span>Privacy · Terms · SMS consent</span></div></div>
+</footer>
+<script>
+(function(){
+  var f=document.getElementById('lead-form');
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();f.classList.add('sent');f.querySelector('button[type=submit]').disabled=true;});}
+})();
+</script>
+
+<script src="flows.js"></script>
+</body>
+</html>
